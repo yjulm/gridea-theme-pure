@@ -1,10 +1,11 @@
-<script src='https://fastly.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<script src='//fastly.jsdelivr.net/npm/@waline/client@v2/dist/waline.js'></script>
+<link href='//fastly.jsdelivr.net/npm/@waline/client@v2/dist/waline.css' rel='stylesheet' />
 
 <style>
 	div#waline{
 		width:<%=site.customConfig['vPercentWidth']%>%;
 		max-width: <%=site.customConfig['vMaxWidth']%>px;
-		padding: <%=site.customConfig['vPadding']%>
+		padding: <%=site.customConfig['vPadding']%>;
 	}
 </style>
 
@@ -12,14 +13,17 @@
 	<div id="waline"></div>
 <% } %>
 <script>
-	new Waline({
+	Waline.init({
 		el: '#waline',
 		login: 'disable',
 		serverURL: '<%=site.customConfig['serverURL']%>',
-		avatar: '<%=site.customConfig['avatar']%>',
 		pageSize: <%=site.customConfig['pageSize']%>,
 		recordIp: <%=site.customConfig['recordIp']%>,
-		placeholder: '<%=site.customConfig['placeholder']%>',
 		visitor: <%=site.customConfig['visitor']%>,
+		emoji: [
+			'//fastly.jsdelivr.net/npm/@waline/emojis@1.0.1/qq',
+			'//fastly.jsdelivr.net/npm/@waline/emojis@1.0.1/bilibili',
+			'//fastly.jsdelivr.net/npm/@waline/emojis@1.0.1/tw-emoji'
+		]
 	});
 </script>
