@@ -171,48 +171,6 @@
       "note": "Vercel部署后的地址：your-domain.vercel.app"
     },
     {
-      "name": "avatar",
-      "label": "评论者头像",
-      "group": "waline评论系统",
-      "value": "",
-      "type": "select",
-      "options": [
-        {
-          "label": "Gravatar官方图形",
-          "value": ""
-        },
-        {
-          "label": "神秘人(一个灰白头像)",
-          "value": "mp"
-        },
-        {
-          "label": "抽象几何图形",
-          "value": "identicon"
-        },
-        {
-          "label": "小怪物",
-          "value": "monsterid"
-        },
-        {
-          "label": "用不同面孔和背景组合生成的头像",
-          "value": "wavatar"
-        },
-        {
-          "label": "八位像素复古头像",
-          "value": "retro"
-        },
-        {
-          "label": "一种具有不同颜色、面部等的机器人",
-          "value": "robohash"
-        },
-        {
-          "label": "不显示头像",
-          "value": "hide"
-        }
-      ],
-      "note": "可在<a href='https://waline.js.org/guide/client/avatar.html'>头像配置</a>页面查看详情"
-    },
-    {
       "name": "pageSize",
       "label": "每页展示的评论条数",
       "group": "waline评论系统",
@@ -248,14 +206,6 @@
       "type": "switch",
       "value": false,
       "note": "是否记录文章访问量"
-    },
-    {
-      "name": "placeholder",
-      "label": "占位提示符",
-      "group": "waline评论系统",
-      "type": "input",
-      "value": "Just Go Go",
-      "note": "评论区占位提示符"
     },
     {
       "name": "customCss",
